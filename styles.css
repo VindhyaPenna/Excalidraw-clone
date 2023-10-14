@@ -1,0 +1,31 @@
+
+@media only screen and (max-width: 730px){
+    .hamburger-button{
+        width: 30px !important;
+        height: 30px !important;
+        position:absolute !important;
+        bottom: -670px !important;
+        /* top:0 !important; */
+    }
+    .menu{
+        width: 100% !important;
+        /* background-color: red; */
+    }
+    .dd{
+        width: 100% !important;
+    }
+    .navmid{
+        width: 90%;
+    }
+    .scrollbar::-webkit-scrollbar-x {
+        height: 2px;
+      }
+
+      
+}
+@media only screen and(min-width:730px){
+   .list::-webkit-scrollbar{
+        display: none;
+    }
+    
+}

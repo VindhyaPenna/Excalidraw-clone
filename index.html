@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+    <nav class="nav d-flex align-items-center justify-content-between">
+      <div class="btn-group m-3 dd" style="position: relative; background-color: pink; ">
+        <button class="btn hamburger-button btn-secondary rounded bg-light border-1 " style="width:40px;height:40px; border:1px soolid gray;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+         <div style="display:flex; flex-direction:column; align-items:center;justify-content:space-between; ">
+          <div style="width:20px; height:2px; border-radius:33px;  background-color:gray; align-self:center;margin:1px;"></div>
+          <div style="width:20px; height:2px; border-radius:33px; background-color:gray; align-self:center;margin:1px;"></div> 
+          <div style="width:20px; height:2px; border-radius:33px; background-color:gray; align-self:center;margin:1px;"></div>
+         </div>
+        </button>
+        <ul class="dropdown-menu menu">
+          <li><a class="dropdown-item" href="#"><i class="fa-regular fa-folder"></i> Open</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+        </ul>
+      </div>
+
+        <div class="navmid d-flex bg-light align-items-center justify-content-around shadow" style=" position: fixed; border-radius:10px">
+            <div class="list" style=" width: 100%; overflow-x: scroll; overflow-y: hidden; display: flex; align-items: center;   height:45px; justify-content: center; border:1px solid rgb(219, 210, 210); border-radius: 10px;">
+              
+              
+              <button class=" lock btn btn-light" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 35px;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#abb0ba}</style><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg>  
+              </button>              
+              
+              <button class=" hand btn btn-light" style="border-radius: 10px; display: flex; align-items: center; justify-content: center;width: 40px; height: 35px; ">
+                <svg xmlns="http://www.w3.org/2000/svg"  height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#a0a2a6}  </style><path d="M256 0c-25.3 0-47.2 14.7-57.6 36c-7-2.6-14.5-4-22.4-4c-35.3 0-64 28.7-64 64V261.5l-2.7-2.7c-25-25-65.5-25-90.5 0s-25 65.5 0 90.5L106.5 437c48 48 113.1 75 181 75H296h8c1.5 0 3-.1 4.5-.4c91.7-6.2 165-79.4 171.1-171.1c.3-1.5 .4-3 .4-4.5V160c0-35.3-28.7-64-64-64c-5.5 0-10.9 .7-16 2V96c0-35.3-28.7-64-64-64c-7.9 0-15.4 1.4-22.4 4C303.2 14.7 281.3 0 256 0zM240 96.1c0 0 0-.1 0-.1V64c0-8.8 7.2-16 16-16s16 7.2 16 16V95.9c0 0 0 .1 0 .1V232c0 13.3 10.7 24 24 24s24-10.7 24-24V96c0 0 0 0 0-.1c0-8.8 7.2-16 16-16s16 7.2 16 16v55.9c0 0 0 .1 0 .1v80c0 13.3 10.7 24 24 24s24-10.7 24-24V160.1c0 0 0-.1 0-.1c0-8.8 7.2-16 16-16s16 7.2 16 16V332.9c-.1 .6-.1 1.3-.2 1.9c-3.4 69.7-59.3 125.6-129 129c-.6 0-1.3 .1-1.9 .2H296h-8.5c-55.2 0-108.1-21.9-147.1-60.9L52.7 315.3c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L119 336.4c6.9 6.9 17.2 8.9 26.2 5.2s14.8-12.5 14.8-22.2V96c0-8.8 7.2-16 16-16c8.8 0 16 7.1 16 15.9V232c0 13.3 10.7 24 24 24s24-10.7 24-24V96.1z"/></svg>
+              </button>
+
+
+              <div class="d-flex align-items-center justify-content-center ">
+                
+               
+                <button class="btn btn-light" style="position:relative; width: 40px; height: 35px; border-radius: 10px; border:none; background-color: fff; display: flex; align-items: center; justify-content: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#616365}</style><path d="M0 55.2V426c0 12.2 9.9 22 22 22c6.3 0 12.4-2.7 16.6-7.5L121.2 346l58.1 116.3c7.9 15.8 27.1 22.2 42.9 14.3s22.2-27.1 14.3-42.9L179.8 320H297.9c12.2 0 22.1-9.9 22.1-22.1c0-6.3-2.7-12.3-7.4-16.5L38.6 37.9C34.3 34.1 28.9 32 23.2 32C10.4 32 0 42.4 0 55.2z"/></svg>
+                  <sub style="position: absolute; bottom:10px; right:3px;color: gray; font-size: x-small;">1</sub>
+                </button>
+               
+                <button class="btn btn-light" style="position:relative; width: 40px; height: 35px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#707275}</style><path d="M384 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H384zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>
+                  <sub style="position: absolute; bottom:10px; right:3px;color: gray;font-size: x-small;">&nbsp; 2</sub>
+                </button>                
+                
+                <button class="btn btn-light"  style=" position:relative; width: 40px; height: 35px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#737578}</style><path d="M284.3 11.7c-15.6-15.6-40.9-15.6-56.6 0l-216 216c-15.6 15.6-15.6 40.9 0 56.6l216 216c15.6 15.6 40.9 15.6 56.6 0l216-216c15.6-15.6 15.6-40.9 0-56.6l-216-216z"/></svg>
+                  <sub style=" position: absolute; bottom:10px; right:3px;color: gray; font-size: x-small;">3</sub>
+                </button>
+
+
+                <button class="btn btn-light" style=" position:relative; width: 40px; height: 35px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#777879}</style><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
+                  <sub style="position: absolute; bottom:10px; right:3px;color: gray;position:absolute;bottom:10px; right:3px; font-size: x-small;"> &nbsp; 4</sub>
+                </button>
+
+                <button class="btn btn-light" style=" position: relative; width: 40px; height: 35px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#808185}</style><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                  <sub style="position: absolute; bottom:10px; right:3px;color: gray; font-size: x-small;">5</sub>
+                </button>
+                
+                <button class="btn btn-light" style=" position: relative; width: 40px; height: 35px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                  <div style="width:15px; height:2px; border-radius:33px; background-color:gray; align-self:center;margin:1px;"></div> 
+                  <sub style="position: absolute; bottom:10px; right:3px;color: gray; font-size: x-small;">6</sub>
+                </button>
+                
+                <button class="btn btn-light" style=" position: relative; width: 40px; height: 35px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg"  height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#6f7071}</style><path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/></svg>
+                  <sub style="position: absolute; bottom:10px; right:3px;color: gray; font-size: x-small;">7</sub>
+                </button>
+
+                
+                <button class="btn btn-light" style=" position: relative; width: 40px; height: 35px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#7e7f81}</style><path d="M254 52.8C249.3 40.3 237.3 32 224 32s-25.3 8.3-30 20.8L57.8 416H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32h-1.8l18-48H303.8l18 48H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H390.2L254 52.8zM279.8 304H168.2L224 155.1 279.8 304z"/></svg>
+                  <sub style="position: absolute; bottom:10px; right:3px;color: gray; font-size: x-small;">8</sub>
+                </button>
+
+                <button class="btn btn-light" style=" position: relative; width: 40px; height: 35px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                  <i class="fa-regular fa-image fa-lg" style="color: #727274;"></i>
+                  <sub style="position: absolute; bottom:10px; right:3px;color: gray; font-size: x-small;">9</sub> 
+                </button>
+
+                <button class="btn btn-light" style=" position: relative; width: 40px; height: 35px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                  <i class="fa-solid fa-eraser fa-lg" style="color: #727274;"></i>
+                  <sub style="position: absolute; bottom:10px; right:3px;color: gray; font-size: x-small;">0</sub> 
+                </button>
+
+
+                <button class="btn btn-light" style=" position: relative; width: 40px; height: 35px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                  
+                  <sub style="position: absolute; bottom:10px; right:3px;color: gray; font-size: x-small;">0</sub> 
+                </button>
+              </div>
+
+
+            </div>
+
+
+        </div>
+      </nav>
+    
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

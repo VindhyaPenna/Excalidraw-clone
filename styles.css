@@ -1,31 +1,234 @@
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+.nav{
+    position: sticky;
+    top: 0;
+    }
+.hash{
+    display: none !important;
+}
+.code{
+    display: none !important;
+}
+/* .hamburger-button{
+ } */
+button:hover{
+    background-color: rgb(230, 232, 235) !important;
+    border:none;
+}
+button:active {
+    background-color: rgb(205, 210, 241) !important;
+    border:none;
+}
+.navmid{
+   max-width:fit-content; 
+}
+::-webkit-scrollbar {
+    height: 1px
+}
+/* ::-webkit-scrollbar-button {
+    /* background: #ccc }*/
 
-@media only screen and (max-width: 730px){
+/* ::-webkit-scrollbar-track-piece {
+    background: #888
+} */
+::-webkit-scrollbar-thumb {
+    background: #eee
+}
+.v-l{
+    height: 30px;
+    width: 1.5px;
+    background-color: lightgrey;
+    margin: 10px;
+}
+
+.live-collab{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(99, 99, 227);
+    border: none;
+    border-radius: 10px;
+}
+.library{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+}
+.resize{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+}
+.plus{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 35px;
+}
+.minus{
+    border: none;
+    border-radius:5px ;
+    height: 40px;
+    width: 35px;
+}
+.middle{
+    border:none;
+    border-radius: 5px;
+    height: 40px;
+    width: 70px;
+    margin: 3px;
+}
+.unre{
+    position: fixed;
+    /* background-color: red; */
+    bottom: 0 !important;
+    left: 170px;
+    margin: 10px;
+}
+.undo{
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+    width: 35px;
+    height: 40px;
+    margin-left: 2px;
+}
+.redo{
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px;
+    width: 35px;
+    height: 40px;
+    margin-right: 2px;
+}
+
+
+@media screen and(max-width:730px){
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .navmid{
+        overflow-x: hidden;
+    }
+}
+@media screen and(max-width:730px) {
+    .paint{
+        display: none !important ;
+    }
+}
+
+@media screen and(min-width:320px),(max-width: 728px)
+{
+    .code{
+        display: block !important;
+    }
+    .hash{
+        display: block !important;
+    }
+    .shapes{
+        display: none !important;
+    }
     .hamburger-button{
         width: 30px !important;
         height: 30px !important;
-        position:absolute !important;
-        bottom: -670px !important;
-        /* top:0 !important; */
+        position:fixed !important;
+        left: 0;
+        bottom: 0 !important;
+        margin: 10px;
+        border: none;
     }
     .menu{
         width: 100% !important;
-        /* background-color: red; */
+        background-color: red;
     }
     .dd{
         width: 100% !important;
     }
     .navmid{
         width: 90%;
+        /* align-self: center; */
+        margin: auto;
     }
-    .scrollbar::-webkit-scrollbar-x {
-        height: 2px;
-      }
-
-      
-}
-@media only screen and(min-width:730px){
-   .list::-webkit-scrollbar{
+    sub{
         display: none;
     }
-    
+    .lock{
+        position:absolute;
+        right: 0;
+        top:145px;
+        width: 40px !important;
+        /* border: 1px solid red; */
+        border-radius: 10px;
+
+     } 
+    .line1{
+        display: none;
+    }
+    .live-collab{
+        display: none;
+    }
+    .library{
+        position: absolute;
+        right: -7px;
+        top:100px;
+        margin: 0;
+        width: 40px !important;
+        height: 35px;
+        background-color: #fff !important;
+        /* border: 1px solid red; */
+        border-radius: 10px;
+
+    }
+    .librarybtntext{
+        display: none;
+    }
+    .hand{
+        position: absolute;
+        right: 0;
+        top: 182px;
+        /* border: 1px solid red; */
+        border-radius: 10px;
+    }
+    .resize{
+        display: none !important;
+    }
+   .unre{
+    display: flex;
+    align-items: flex-start;
+    display: flex;
+    width: 60%;
+    margin-left: -100px;
+    justify-content: space-around;
+   }
+   .undo{
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+   }
+   .redo{
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px;
+    width: 30px;
+    height: 30px;
+    margin-right: 2px;
+   }
+
+/* .paint{
+    display: block !important;
+    border: none;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+} */
 }
+

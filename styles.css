@@ -14,8 +14,7 @@ body{
 .code{
     display: none !important;
 }
-/* .hamburger-button{
- } */
+
 button:hover{
     background-color: rgb(230, 232, 235) !important;
     border:none;
@@ -31,9 +30,9 @@ button:active {
     height: 1px
 }
 /* ::-webkit-scrollbar-button {
-    /* background: #ccc }*/
-
-/* ::-webkit-scrollbar-track-piece {
+    background: #ccc
+}
+::-webkit-scrollbar-track-piece {
     background: #888
 } */
 ::-webkit-scrollbar-thumb {

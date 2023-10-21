@@ -230,7 +230,9 @@ button:active {
     height: 30px;
     margin-right: 2px;
    }
-
+   .bottom-lefticons{
+    display: none !important;
+   }
 /* .paint{
     display: block !important;
     border: none;

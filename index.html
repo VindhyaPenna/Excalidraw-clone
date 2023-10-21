@@ -24,31 +24,39 @@
            </div>
          </button>
          <ul class="dropdown-menu menu">
-           <li><a class="dropdown-item d-flex align-items-center justify-content-between" href="#"> <div><i class="fa-regular fa-folder"></i> Open  </div> <span style="font-size: small; color: gray; align-self: flex-end;">Ctrl+O</span></a></li>
-           <li><a class="dropdown-item" href="#">Save to...</a></li>
-           <li><a class="dropdown-item d-flex align-items-center justify-content-between" href="#"><div>Export image...</div> <span style="font-size: small; color: gray;">Ctrl+Shift+E</span></a></li>
-           <li><a class="dropdown-item" href="#">Live Collaboration...</a></li>
-           <li><a class="dropdown-item" href="#">Help</a></li>
-           <li><a class="dropdown-item" href="#">Reset the canvas</a></li>
-            <hr>
+           <li><a class="dropdown-item my-1 d-flex align-items-center justify-content-between" href="#"> <div><i class="fa-regular fa-folder"></i> Open  </div> <span style="font-size: small; color: gray; align-self: flex-end;">Ctrl+O</span></a></li>
+           <li><a class="dropdown-item my-1" href="#"><i class="fa-solid fa-download me-2" style="color: #89898b;"></i>Save to...</a></li>
+           <li><a class="dropdown-item my-1 d-flex align-items-center justify-content-between" href="#"><div><i class="fa-solid fa-image me-2" style="color: #727479;"></i>Export image...</div> <span style="font-size: small; color: gray;">Ctrl+Shift+E</span></a></li>
+           <li><a class="dropdown-item my-1" href="#"> <i class="fa-solid fa-user-group me-2" style="color: #6c7171; "></i>Live Collaboration...</a></li>
+           <li><a class="dropdown-item my-1 d-flex align-items-center justify-content-between" href="#"><div class=""><i class="fa-regular fa-circle-question me-2" style="color: #6e7072;"></i>Help</div><span style="font-size: small; color: gray;">?</span></a></li>
+           <li><a class="dropdown-item my-1" href="#"> <i class="fa-solid fa-trash me-2" style="color: #47494d;"></i>Reset the canvas</a></li>
+            <hr width="90%" style="margin: auto;">
 
-            <li><a class="dropdown-item" href="#">Excalidraw+</a></li>
-            <li><a class="dropdown-item" href="#">GitHUb</a></li>
-            <li><a class="dropdown-item" href="#">Discord</a></li>
-            <li><a class="dropdown-item" href="#">Twitter</a></li>
+            <li><a class="dropdown-item my-1" href="#"> <i class="fa-solid fa-gift me-2" style="color: #6a6b6c;"></i>Excalidraw+</a></li>
+            <li><a class="dropdown-item my-1" href="#"><i class="fa-brands fa-github me-2" style="color: #4d4f51;"></i>GitHUb</a></li>
+            <li><a class="dropdown-item my-1" href="#"> <i class="fa-brands fa-discord me-2" style="color: #656667;"></i>Discord</a></li>
+            <li><a class="dropdown-item my-1" href="#"> <i class="fa-brands fa-twitter me-2" style="color: #747576;"></i>Twitter</a></li>
 
-            <hr>
+            <hr width="90%" style="margin: auto;">
 
-            <li><a class="dropdown-item" href="#">Dark mode</a></li>
+            <li><a class="dropdown-item my-2" href="#"> <i class="fa-solid fa-moon me-2" style="color: #58595a;"></i>Dark mode</a></li>
             
-          <label class="d-flex align-items-center justify-content-center" for="Language"></label>
-          <select name="Language" id="Language">
+         <select name="Language" id="Language" class="d-flex justify-content-center" style="margin: auto; width: 80%;">
           <option value="English">English</option>
           <option value="Marathi">Marathi</option>
           <option value="Kannada">Kannada</option>
           <option value="French">French</option>
           </select>
 
+          <p class="fs-small" style="font-size: small; margin-left: 30px; display: block;">Canvas background</p>
+          <div class="ms-2">
+            <button class="colorbtn" style="width: 25px; height: 30px; border-radius: 5px; border: 1px solid lightgray;"></button>
+            <button class="colorbtn" style="width: 25px; height: 30px; border-radius: 5px; border: 1px solid lightgray;"></button>
+            <button class="colorbtn" style="width: 25px; height: 30px; border-radius: 5px; border: 1px solid lightgray;"></button>
+            <button class="colorbtn" style="width: 25px; height: 30px; border-radius: 5px; border: 1px solid lightgray;"></button>
+            <button class="colorbtn" style="width: 25px; height: 30px; border-radius: 5px; border: 1px solid lightgray;"></button>
+            <button class="ms-4" style="width: 35px; height: 40px; border-radius: 5px; border: 1px solid lightgray;"></button>
+          </div>
          </ul>
        </div>
  
@@ -180,6 +188,10 @@
     </div>
       
 
+    <div class="d-flex align-items-center justify-content-center bottom-lefticons">
+      <a href=""><i class="fa-solid fa-shield fa-lg me-3" style="color: #336dd1; position: absolute; bottom: -10px; right: 80px;"><i class="fa-solid fa-check fa-2xs" style="color: #faf8f8;position: absolute; bottom: 0;top: 1px; right: 4px;"></i></i></a>
+      <button class="" style="position: absolute; bottom: -28px;  border-radius: 5px; border: 1px solid lightgray; width: 40px; height: 40px; right: 40px;"><i class="fa-regular fa-circle-question" style="color: #121212;"></i></button>
+    </div>
 
       <script src="index.js"></script>
       <script src="freehandcanvas.js"></script>

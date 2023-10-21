@@ -63,6 +63,10 @@ button:active {
     left: 0;
     margin: 10px;
 }
+.active{
+    background-color: lightblue!important;
+    color: #fff;
+}
 .plus{
     border: none;
     border-radius: 5px;
@@ -143,7 +147,7 @@ button:active {
     }
     .menu{
         width: 100% !important;
-        background-color: red;
+        /* background-color: red; */
     }
     .dd{
         width: 100% !important;
@@ -183,6 +187,7 @@ button:active {
         border-radius: 10px;
 
     }
+    
     .librarybtntext{
         display: none;
     }

@@ -9,7 +9,8 @@ const c = canvas.getContext("2d");
 let prevPosition = null;
 
 function onMouseDown(event){
-    prevPosition = [event.clientX,event.clientY];
+    
+    prevPosition = [event.offsetX,event.offsetY];console.log(prevPosition)
     c.strokeStyle = "black";
     c.lineWidth  = 2;
     canvas.addEventListener("mousemove",onMouseMove);
@@ -18,7 +19,7 @@ function onMouseDown(event){
 
 function onMouseMove(e){
     
-    let currentPosition = [e.clientX, e.clientY];
+    let currentPosition = [e.offsetX, e.offsetY];
     console.log(currentPosition);
     c.beginPath();
     c.moveTo(...prevPosition);

@@ -5,6 +5,7 @@ body{
     box-sizing: border-box;
     width: 100vw;
     height: 100vh;
+    white-space: wrap;
     overflow: hidden;
     background-repeat: repeat;
  }
@@ -72,6 +73,9 @@ button:active {
     background-color: lightblue!important;
     color: #fff;
 }
+.navmidActive{
+    background-color: rgb(246, 244, 244);
+}
 .plus{
     border: none;
     border-radius: 5px;
@@ -123,14 +127,19 @@ button:active {
     .navmid{
         overflow-x: hidden;
     }
-}
-@media screen and(max-width:730px) {
     .paint{
         display: none !important ;
     }
 }
-
-@media screen and(min-width:320px),(max-width: 728px)
+@media only screen and(min-width:100px),(max-width:674px){
+    .navmid{
+        position: fixed !important;
+        left: auto!important;
+        /* background-color: red; */
+        /* margin-right: 50px ; */
+    }
+}
+@media screen and(min-width:320px),(max-width: 980px)
 {
     .code{
         display: block !important;
@@ -158,15 +167,17 @@ button:active {
         width: 100% !important;
     }
     .navmid{
-        width: 90%;
+        width: 100%;
         /* align-self: center; */
-        margin: auto;
+        /* margin: auto !important; */
+        position:absolute!important;
+        /* left: 10% !important; */
     }
     sub{
         display: none;
     }
     .lock{
-        position:absolute;
+        position:fixed;
         right: 0;
         top:145px;
         width: 40px !important;
@@ -181,7 +192,7 @@ button:active {
         display: none;
     }
     .library{
-        position: absolute;
+        position: fixed;
         right: -7px;
         top:100px;
         margin: 0;
@@ -197,7 +208,7 @@ button:active {
         display: none;
     }
     .hand{
-        position: absolute;
+        position:fixed;
         right: 0;
         top: 182px;
         /* border: 1px solid red; */

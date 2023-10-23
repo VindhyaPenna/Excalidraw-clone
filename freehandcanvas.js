@@ -1,4 +1,5 @@
 const pen = document.getElementById("pen");
+const midnav = document.getElementById("navmid");
 let ispenActive = false;
 
 
@@ -6,6 +7,7 @@ let ispenActive = false;
 
 function onPenClick(){
     pen.classList.toggle("active");
+    midnav.classList.toggle("navmidActive");
     ispenActive = !ispenActive;
 
     if(ispenActive){

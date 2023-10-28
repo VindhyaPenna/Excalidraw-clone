@@ -49,6 +49,8 @@ function onEraseMove(e){
   console.log("hi move");
 //   let width = currentPosition.x-initialPosition.x;
 //   let height = currentPosition.y-initialPosition.y;
+  c.lineCap = "round";
+  c.lineJoin = "round";
   c.clearRect(currentPosition.x,currentPosition.y,100,100);
 //   c.closePath();
 }
@@ -57,7 +59,7 @@ function onEraseUp(){
     history.push(c.getImageData(0,0,canvas.width,canvas.height));
     historyIndex++;
 // resetToOriginalImage();
-console.log("hi up");
+    console.log("hi up");
     canvas.removeEventListener("mousemove",onEraseMove);
     canvas.removeEventListener("mouseup",onEraseUp);
 }

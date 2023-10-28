@@ -9,6 +9,7 @@ body{
     overflow: hidden;
     background-repeat: repeat;
  }
+
  .toggle{
     max-width: fit-content;
     background-color: red;
@@ -38,6 +39,7 @@ body{
 .none{
     display: none;
 }
+
 .show{
     display:block !important;
 }
